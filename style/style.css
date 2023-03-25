@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+#div5 {
+
+    
+	
+	width: 80px;
+	height: 20px;
+	background: #FF9100;
+	border-radius: 8px;
+}
+
+.zuopin {
+	background-image: url(../images/123.png);
+}
+.biaoge
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#div1 {
+	    visibility: hidden;
+}
+
+#div6 {
+	position: absolute;
+}
+#div7 {
+	position: absolute;
+	z-index: 3;
+	left: 652px;
+	top: 217px;
+	width: 117px;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#myElement {
+  animation: fadeOut 2s ease-in-out;
+}
+#div0 {
+	position: absolute;
+	left: 456px;
+	top: 168px;
+}

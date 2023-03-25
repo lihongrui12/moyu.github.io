@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Lock</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		
+		h1 {
+			margin-top: 50px;
+		}
+		
+		input[type="password"] {
+			padding: 10px;
+			font-size: 16px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			margin-top: 20px;
+		}
+		
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #eee;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+		
+		#secret {
+			display: none;
+			margin-top: 50px;
+		}
+	body,td,th {
+	font-family: "华康布丁体W12";
+}
+    </style>
+<meta charset="utf-8">
+</head>
+<body><bgsound src="mp4/樱桃小丸子.mid" loop="-1"></bgsound>
+	<h1>请输入密码:</h1>
+	<input type="password" id="password" placeholder="Enter Password">
+	<button onclick="checkPassword()">解锁</button>
+	<div id="secret">
+		<h2>秘密内容</h2>
+		<p>这是一条只有在输入正确的密码后才能看到的秘密。</p>
+		<h2><img src="images/2.jpg"/></h2>
+	</div>
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password == "0512") {
+				document.getElementById("password").value = "";
+				document.getElementById("secret").style.display = "block";
+			} else {
+				alert("密码错误");
+			}
+		}
+	</script>
+</body>
+</html>
